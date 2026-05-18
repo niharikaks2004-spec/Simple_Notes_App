@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Notes App</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="app">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <h3>Tags</h3>
+    <ul id="tagList"></ul>
+    <button id="clearFilter">Clear Filter</button>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <div class="container">
+    <div class="header">
+      <h1>📝Notes Space</h1>
+      <button id="darkToggle">🌙</button>
+    </div>
+
+    <p class="counter" id="counter"></p>
+
+    <h3>Add Note</h3>
+    <input type="text" id="title" placeholder="Title">
+    <textarea id="content" placeholder="Write something..."></textarea>
+    <input type="text" id="tags" placeholder="tags (comma separated)">
+    <button class="add-btn" id="addBtn">Add</button>
+
+    <h3>Search</h3>
+    <input type="text" id="search" placeholder="Search...">
+
+    <ul id="list"></ul>
+  </div>
+
+</div>
+
+<!-- MODAL -->
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <h3>Edit Note</h3>
+    <input id="editTitle">
+    <textarea id="editContent"></textarea>
+    <input id="editTags">
+    <button id="saveEdit">Save</button>
+    <button id="closeModal">Cancel</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
