@@ -1,4 +1,4 @@
-# 📝 Agnirva Notes App
+# 📝 Notes App
 
 A clean, feature-rich note-taking web application built with vanilla HTML, CSS, and JavaScript. No frameworks, no dependencies — just open the file and start writing.
 
